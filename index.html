@@ -3,7 +3,31 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Timer Animation</title>
+    <style>
+      .timer {
+        font-size: 48px;
+        text-align: center;
+        animation: countdown 5s linear infinite; /* Change the duration (5s) as per your requirement */
+      }
+
+      @keyframes countdown {
+        0% {
+          transform: scale(1);
+          color: green;
+        }
+        50% {
+          transform: scale(1.1);
+          color: orange;
+        }
+        100% {
+          transform: scale(1);
+          color: red;
+        }
+      }
+    </style>
   </head>
-  <body></body>
+  <body>
+    <div class="timer">00:00</div>
+  </body>
 </html>
